@@ -1,0 +1,380 @@
+// Источник: резюме, обновлённое 28 октября 2026 года.
+// Описания сокращены, названия технологий нормализованы, дубликаты убраны.
+// GitHub и LinkedIn в резюме не указаны. Telegram указан как контакт.
+// Проекты без подтверждённых ссылок не включены; домен Cosmos взят из резюме.
+// Даты известны с точностью до месяца: используем первое число месяца в UTC.
+// ID постоянные: при изменении порядка или названия записи сохраняйте её ID.
+// createdAt и updatedAt заполняет Prisma, поэтому здесь их нет.
+import type { Prisma } from '../src/generated/prisma/client.js';
+
+export const profileData = {
+  id: '11111111-1111-4111-8111-111111111111',
+  name: 'Максаков Никита Владимирович',
+  description:
+    'Fullstack-разработчик с опытом создания web- и мобильных приложений. Специализируюсь на React, Next.js, TypeScript, Go и архитектуре Feature-Sliced Design. Разрабатываю приложения с нуля, модернизирую legacy-системы, оптимизирую производительность и SEO. Имею опыт технического лидерства, наставничества и взаимодействия с бизнесом.',
+} satisfies Prisma.ProfileCreateInput;
+
+export const linksData = [
+  {
+    id: '00000002-1111-4111-8111-000000000001',
+    profileId: profileData.id,
+    name: 'Telegram',
+    url: 'https://t.me/legkeey',
+    sortOrder: 0,
+  },
+  {
+    id: '00000002-1111-4111-8111-000000000002',
+    profileId: profileData.id,
+    name: 'GitHub',
+    url: 'https://github.com/legkiy',
+    sortOrder: 1,
+  },
+] satisfies Prisma.ProfileLinkCreateManyInput[];
+
+export const skillsData = [
+  {
+    id: '00000003-1111-4111-8111-000000000001',
+    profileId: profileData.id,
+    name: 'TypeScript',
+    sortOrder: 0,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000002',
+    profileId: profileData.id,
+    name: 'JavaScript',
+    sortOrder: 1,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000003',
+    profileId: profileData.id,
+    name: 'React',
+    sortOrder: 2,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000004',
+    profileId: profileData.id,
+    name: 'Next.js',
+    sortOrder: 3,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000005',
+    profileId: profileData.id,
+    name: 'Node.js',
+    sortOrder: 4,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000006',
+    profileId: profileData.id,
+    name: 'NestJS',
+    sortOrder: 5,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000007',
+    profileId: profileData.id,
+    name: 'Go',
+    sortOrder: 6,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000008',
+    profileId: profileData.id,
+    name: 'PostgreSQL',
+    sortOrder: 7,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000009',
+    profileId: profileData.id,
+    name: 'Git',
+    sortOrder: 8,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000010',
+    profileId: profileData.id,
+    name: 'HTML',
+    sortOrder: 9,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000011',
+    profileId: profileData.id,
+    name: 'CSS',
+    sortOrder: 10,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000012',
+    profileId: profileData.id,
+    name: 'Sass',
+    sortOrder: 11,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000013',
+    profileId: profileData.id,
+    name: 'Feature-Sliced Design',
+    sortOrder: 12,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000014',
+    profileId: profileData.id,
+    name: 'React Native',
+    sortOrder: 13,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000015',
+    profileId: profileData.id,
+    name: 'Redux',
+    sortOrder: 14,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000016',
+    profileId: profileData.id,
+    name: 'Redux Toolkit',
+    sortOrder: 15,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000017',
+    profileId: profileData.id,
+    name: 'Zustand',
+    sortOrder: 16,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000018',
+    profileId: profileData.id,
+    name: 'MobX',
+    sortOrder: 17,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000019',
+    profileId: profileData.id,
+    name: 'Material UI',
+    sortOrder: 18,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000020',
+    profileId: profileData.id,
+    name: 'Styled Components',
+    sortOrder: 19,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000021',
+    profileId: profileData.id,
+    name: 'WebSocket',
+    sortOrder: 20,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000022',
+    profileId: profileData.id,
+    name: 'Linux',
+    sortOrder: 21,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000023',
+    profileId: profileData.id,
+    name: 'Redis',
+    sortOrder: 22,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000024',
+    profileId: profileData.id,
+    name: 'MongoDB',
+    sortOrder: 23,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000025',
+    profileId: profileData.id,
+    name: 'Express',
+    sortOrder: 24,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000026',
+    profileId: profileData.id,
+    name: 'Sequelize',
+    sortOrder: 25,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000027',
+    profileId: profileData.id,
+    name: 'Tailwind CSS',
+    sortOrder: 26,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000028',
+    profileId: profileData.id,
+    name: 'shadcn/ui',
+    sortOrder: 27,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000029',
+    profileId: profileData.id,
+    name: 'Radix UI',
+    sortOrder: 28,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000030',
+    profileId: profileData.id,
+    name: 'React Hook Form',
+    sortOrder: 29,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000031',
+    profileId: profileData.id,
+    name: 'Zod',
+    sortOrder: 30,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000032',
+    profileId: profileData.id,
+    name: 'Formik',
+    sortOrder: 31,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000033',
+    profileId: profileData.id,
+    name: 'next-intl',
+    sortOrder: 32,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000034',
+    profileId: profileData.id,
+    name: 'i18next',
+    sortOrder: 33,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000035',
+    profileId: profileData.id,
+    name: 'Keycloak',
+    sortOrder: 34,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000036',
+    profileId: profileData.id,
+    name: 'Expo',
+    sortOrder: 35,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000037',
+    profileId: profileData.id,
+    name: 'Flutter',
+    sortOrder: 36,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000038',
+    profileId: profileData.id,
+    name: 'Firebase',
+    sortOrder: 37,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000039',
+    profileId: profileData.id,
+    name: 'Chart.js',
+    sortOrder: 38,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000040',
+    profileId: profileData.id,
+    name: 'ApexCharts',
+    sortOrder: 39,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000041',
+    profileId: profileData.id,
+    name: 'Arduino',
+    sortOrder: 40,
+  },
+  {
+    id: '00000003-1111-4111-8111-000000000042',
+    profileId: profileData.id,
+    name: 'Raspberry Pi',
+    sortOrder: 41,
+  },
+] satisfies Prisma.SkillCreateManyInput[];
+
+export const experienceData = [
+  {
+    id: '00000004-1111-4111-8111-000000000001',
+    profileId: profileData.id,
+    company: 'Cosmos Hotel Group',
+    position: 'Fullstack-разработчик',
+    startDate: new Date('2025-02-01T00:00:00.000Z'),
+    endDate: null,
+    achievements: [
+      'Выполнил миграцию основного сайта с монолита PHP на Next.js 15 (App Router) и backend на Go с последующей поддержкой и развитием.',
+      'Разработал REST API для существующей базы данных и добавил индексы для оптимизации запросов.',
+      'Спроектировал frontend-архитектуру на базе Feature-Sliced Design и адаптировал сайт под требования доступности.',
+      'Сократил Time to First Byte и First Contentful Paint примерно в 10 раз; улучшение SEO подтверждено внешней SEO-командой.',
+      'Настроил кэширование через Redis и мультиязычность на четырёх языках, работу с поддоменами и параллельными роутами.',
+      'Интегрировал личный кабинет и стороннюю систему бронирования.',
+      'Разработал новую административную панель, включая UI/UX-дизайн, и внутренний магазин мерча.',
+      'Проводил технические интервью с кандидатами.',
+    ],
+    sortOrder: 0,
+  },
+  {
+    id: '00000004-1111-4111-8111-000000000002',
+    profileId: profileData.id,
+    company: 'Мария, Мебельная фабрика',
+    position: 'Frontend-разработчик',
+    startDate: new Date('2024-09-01T00:00:00.000Z'),
+    endDate: new Date('2025-01-01T00:00:00.000Z'),
+    achievements: [
+      'Руководил frontend-разработкой B2B-сервиса с нуля для менеджеров, работающих с застройщиками.',
+      'Самостоятельно выстроил FSD-архитектуру и технические решения, взаимодействовал с бизнесом и конечными пользователями.',
+      'Разработал web- и мобильную версии приложения на Next.js и React Native.',
+      'Сервис использовался в пилоте четырьмя менеджерами; по итогам тестирования конверсия выросла примерно на 5%.',
+    ],
+    sortOrder: 1,
+  },
+  {
+    id: '00000004-1111-4111-8111-000000000003',
+    profileId: profileData.id,
+    company: 'Ньютон Финанс',
+    position: 'Fullstack-разработчик',
+    startDate: new Date('2023-07-01T00:00:00.000Z'),
+    endDate: new Date('2024-08-01T00:00:00.000Z'),
+    achievements: [
+      'Курировал frontend-направление и занимался наставничеством разработчиков.',
+      'Разрабатывал промостраницы для Raft Leasing и был ведущим разработчиком проекта Newton Finance.',
+      'Разработал анкеты со сложной логикой форм, повысившие конверсию клиентов на 30%.',
+      'Разрабатывал и оптимизировал административную панель управления серверами: графики с данными в реальном времени, таблицы с пагинацией и сортировкой, формы и DnD-компоненты.',
+      'Реализовал локализацию, авторизацию и оптимизацию запросов.',
+    ],
+    sortOrder: 2,
+  },
+  {
+    id: '00000004-1111-4111-8111-000000000004',
+    profileId: profileData.id,
+    company: 'ООО Инфинитум',
+    position: 'Fullstack-разработчик',
+    startDate: new Date('2023-02-01T00:00:00.000Z'),
+    endDate: new Date('2023-07-01T00:00:00.000Z'),
+    achievements: [
+      'Выполнял рефакторинг приложения и курировал других frontend-разработчиков.',
+      'Реализовал онлайн-статусы пользователей через Redis и Socket.IO, функциональность мессенджера и генерацию PDF.',
+      'Разрабатывал внутренний сервис объявлений с уклоном на автозапчасти.',
+      'Участвовал в разработке мобильного приложения на Flutter: создавал виджеты и внутренний мессенджер с Firebase.',
+    ],
+    sortOrder: 3,
+  },
+  {
+    id: '00000004-1111-4111-8111-000000000005',
+    profileId: profileData.id,
+    company: 'Институт систем энергетики им. Меленьтева СО РАН',
+    position: 'Инженер, программист',
+    startDate: new Date('2020-11-01T00:00:00.000Z'),
+    endDate: new Date('2023-02-01T00:00:00.000Z'),
+    achievements: [
+      'Разработал web-приложение мониторинга экологического состояния объектов теплоэнергетики.',
+      'Реализовал визуализацию данных с использованием Chart.js.',
+      'Участвовал в научных исследованиях и публикациях (Scopus).',
+      'Разрабатывал систему мониторинга солнечных панелей на Arduino и Raspberry Pi.',
+    ],
+    sortOrder: 4,
+  },
+] satisfies Prisma.ExperienceCreateManyInput[];
+
+export const projectsData = [
+  {
+    id: '00000005-1111-4111-8111-000000000001',
+    profileId: profileData.id,
+    name: 'Сайт Cosmos Hotel Group',
+    url: 'https://cosmosgroup.ru',
+    sortOrder: 0,
+  },
+] satisfies Prisma.ProjectCreateManyInput[];

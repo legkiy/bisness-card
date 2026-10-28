@@ -14,13 +14,17 @@ export class PrismaService
       throw new Error('DATABASE_URL is required');
     }
 
-    const adapter = new PrismaPg({ connectionString });
+    const adapter = new PrismaPg({
+      connectionString,
+      connectionTimeoutMillis: 5_000,
+    });
 
     super({ adapter });
   }
 
   async onModuleInit(): Promise<void> {
     await this.$connect();
+    await this.$queryRaw`SELECT 1`;
   }
 
   async onModuleDestroy(): Promise<void> {
