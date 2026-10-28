@@ -2,6 +2,13 @@
 /dist
 /node_modules
 /build
+/docs
+
+/.agents
+/.claude
+/.windsurf
+skills-lock.json
+
 
 # TypeScript build cache
 *.tsbuildinfo
@@ -57,3 +64,5 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+/src/generated/prisma
